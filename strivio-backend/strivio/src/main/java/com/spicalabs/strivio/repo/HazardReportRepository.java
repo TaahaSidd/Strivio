@@ -1,4 +1,4 @@
-package com.spicalabs.repo;
+package com.spicalabs.strivio.repo;
 
 import java.util.UUID;
 
