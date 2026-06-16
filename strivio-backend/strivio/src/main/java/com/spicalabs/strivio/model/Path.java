@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
-import org.geolatte.geom.LineString;
+import org.locationtech.jts.geom.LineString;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -41,7 +41,7 @@ public class Path {
     private BigDecimal distance;
 
     @Column(name = "route_path", columnDefinition = "geometry(LineString,4326)")
-    private LineString<?> routePath;
+    private LineString routePath;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id")
