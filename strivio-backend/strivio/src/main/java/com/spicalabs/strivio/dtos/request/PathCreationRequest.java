@@ -23,6 +23,7 @@ public class PathCreationRequest {
 
     private String description;
     private BigDecimal distance;
+    
     @NotNull(message = "A path must contain at least two coordinates")
     private List<CoordinateRequest> coordinates;
 }
